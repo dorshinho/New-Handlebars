@@ -21,18 +21,45 @@
   <link rel="apple-touch-icon" href="images/Handled_icon.png">
 </head>
 <body>
-  <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+  <div class="w-nav map_navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
-      <a class="w-nav-brand" href="index.html"><img src="images/briefcase_handled_logo_white.png" width="219">
+      <a class="w-nav-brand" href="#"><img src="images/briefcase_handled_logo_white.png" width="219">
       </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="index.html">Home</a><a class="w-nav-link" href="verification.html">Verification</a>
-      </nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
-      </div>
+      <nav class="w-nav-menu" role="navigation"></nav>
+      <div class="w-nav-button"></div>
     </div>
   </div>
-  <div class="w-widget w-widget-map map" data-widget-latlng="29.760427,-95.369803" data-widget-style="hybrid" data-widget-zoom="13" data-disable-scroll="1"></div>
+  <div class="w-widget w-widget-map map" data-widget-latlng="29.760427,-95.369803" data-widget-style="roadmap" data-widget-zoom="13" data-disable-scroll="1"></div>
+  <h2 class="service_header">Define your Service Area</h2>
+  <div class="matched_text">Get matched with clients who recieive
+    <br>tickets within a 25, 50, 75, or 100 mile
+    <br>radius of your area. You can always
+    <br>change your settings later.</div>
+  <div class="matched_text heading">handled</div>
+  <div class="overlay"></div>
+  <ul class="w-list-unstyled radius_links">
+    <li class="dots"><img class="progress_dot" src="images/filled-criclewhite.png" width="18" data-ix="navopacity">
+    </li>
+    <li class="dots"><img class="progress_dot" src="images/filled-criclewhite.png" width="18" data-ix="navopacity">
+    </li>
+    <li class="dots"><img class="progress_dot" src="images/filled-criclewhite.png" width="19" data-ix="navopacity">
+    </li>
+    <li class="dots"><img class="progress_dot" src="images/filled-criclewhite.png" width="18" data-ix="navopacity">
+    </li>
+  </ul>
+  <div class="line"></div><a class="button service" href="verification.html">Almost done</a>
+  <div class="circle_selector" data-ix="messages-show">
+    <div class="_25_miles">25 Miles</div>
+  </div>
+  <div class="circle_selector fifty">
+    <div class="_25_miles two">50 Miles</div>
+  </div>
+  <div class="circle_selector fifty three">
+    <div class="_25_miles two">75 Miles</div>
+  </div>
+  <div class="circle_selector fifty three four">
+    <div class="_25_miles two three">100 Miles</div>
+  </div>
   <div class="w-section footer_map">
     <div class="footer_map-copyright">Copyright Handled 2015</div>
   </div>

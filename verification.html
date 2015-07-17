@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/handled.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
@@ -21,27 +21,33 @@
   <link rel="apple-touch-icon" href="images/Handled_icon.png">
 </head>
 <body>
-  <div class="w-nav navigate" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+  <div class="w-nav navigate" data-collapse="all" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
-      <a class="w-nav-brand" href="index.html"><img class="icon_ver" src="images/briefcase_handled_logo_white.png" width="214" data-ix="fade-in-left-scroll-in">
+      <a class="w-nav-brand" href="#"><img class="icon_ver" src="images/briefcase_handled_logo_white.png" width="214" data-ix="fade-in-left-scroll-in">
       </a>
       <nav class="w-nav-menu" role="navigation"><a class="w-nav-link nav_link2" href="service-area.html">Service Area</a><a class="w-nav-link nav_link2" href="verification.html">Verification</a>
       </nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
-      </div>
+      <div class="w-nav-button"></div>
     </div>
   </div>
-  <div class="w-section hero-section centered">
+  <div class="w-section hero-section centered attorney">
     <div class="w-container header_container-ver">
-      <h1>Attorney Verification</h1>
+      <h1 data-ix="fade-in-top-scroll-in">Attorney Verification</h1>
     </div>
     <div class="w-container">
-      <div class="verification_text">This includes your practice.&nbsp;Before we can send you clients we need to verify your identitiy.&nbsp;Include your bar number to begin the verification process. A real human will verify your appication and may reach out to you via phone or email.</div>
-      <div class="button-block" data-ix="fade-in-bottom-page-loads"><a class="hollow-button _22" href="#Details">SUBMIT</a>
+      <div class="verification_text">This includes your practice.&nbsp;However, before we can send you clients, we need to verify your identity.&nbsp;Include your bar number to begin the verification process. A real human will verify your application and may reach out to you via phone or email.</div>
+    </div>
+    <div class="w-form attorney_submit-form">
+      <form class="attorney_form" id="email-form" name="email-form" data-name="Email Form" data-redirect="/briefcase">
+        <input class="w-input attorney_text-field" id="Bar-Number" type="text" placeholder="Bar #" name="Bar-Number" data-name="Bar Number" required="required">
+        <input class="w-button attorney_submit-button" type="submit" value="SUBMIT" data-wait="Please wait...">
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
       </div>
-      <div class="text_block-veri">Bar Number
-        <br>-------------------------------------</div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form</p>
+      </div>
     </div>
   </div>
   <div class="w-section footer center">
